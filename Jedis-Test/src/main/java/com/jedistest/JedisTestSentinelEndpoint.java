@@ -41,8 +41,8 @@ public class JedisTestSentinelEndpoint {
             try {
                 System.out.println("Fetching connection from pool");
                 jedis = pool.getResource();
-                System.out.println("Authenticating...");
-                jedis.auth(PASSWORD);
+            //    System.out.println("Authenticating...");
+            //    jedis.auth(PASSWORD);
                 System.out.println("auth complete...");
                 Socket socket = jedis.getClient().getSocket();
                 System.out.println("Connected to " + socket.getRemoteSocketAddress());
